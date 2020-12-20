@@ -1,3 +1,5 @@
+# From https://github.com/philtabor/Youtube-Code-Repository/blob/master/ReinforcementLearning/DeepQLearning/dqn_keras.py
+
 """ReplayBuffer Class
 
 Replay buffer stores past experiences efficiently and samples them
