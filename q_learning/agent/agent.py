@@ -72,7 +72,7 @@ class Agent():
         batch_index = np.arange(self.batch_size, dtype=np.int32)
 
         # update based on Bellman equations
-        q_target[batch_index, actions] = rewards + self.gamma * np.max(q_next, axis = 1) * dones
+        q_target[batch_index, actions] = rewards + self.gamma * np.max(q_next, axis = 1) * (1 - dones)
 
         # updates weights
         self.model.train_on_batch(states, q_target)
