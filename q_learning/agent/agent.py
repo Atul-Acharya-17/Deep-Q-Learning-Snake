@@ -54,6 +54,10 @@ class Agent():
         return action
 
     # updates the weights of the neural newtork to approximate more accurately
+
+    ################################################################
+    # from https://github.com/philtabor/Youtube-Code-Repository/blob/master/ReinforcementLearning/DeepQLearning/dqn_keras.py
+    ################################################################
     def learn(self):
         if self.memory.mem_counter < self.batch_size:
             return
